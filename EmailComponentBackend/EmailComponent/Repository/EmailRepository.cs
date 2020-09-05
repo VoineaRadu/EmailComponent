@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 using EmailComponent.App_Data;
 using EmailComponent.Dtos;
 using EmailComponent.Models;
-using EmailComponent.Utils;
 
 namespace EmailComponent.Repository
 {
@@ -65,12 +64,12 @@ namespace EmailComponent.Repository
 
         public async Task DeleteEmail(string conversationId)
         {
-           await _emailDao.DeleteEmail(conversationId);
+            await _emailDao.DeleteEmail(conversationId);
         }
-        
+
         public async Task ReadEmail(int emailId)
         {
             await _emailDao.ReadEmail(emailId);
         }
     }
-}    
+}

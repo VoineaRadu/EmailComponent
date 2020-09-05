@@ -3,9 +3,11 @@
     public class DataContext
     {
         public EmailDao _emailDao;
+        public UserDao _userDao;
         private DataContext()
         {
             _emailDao = new EmailDao();
+            _userDao = new UserDao();
         }
 
         private static DataContext _instance;
