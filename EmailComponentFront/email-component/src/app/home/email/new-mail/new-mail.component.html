@@ -1,0 +1,14 @@
+<div class="container">
+  <p class="title">New mail</p>
+
+  <form #newEmailForm="ngForm" (ngSubmit)="sendEmail(newEmailForm)">
+
+    <input type="email" name="to" placeholder="To" required [(ngModel)]="email.receiverEmail">
+    <input type="text" name="subject" placeholder="Subject" [(ngModel)]="email.subject">
+    <textarea placeholder="Message" name="message" [(ngModel)]="email.message"></textarea>
+    <div class="button">
+      <button [disabled]="!newEmailForm.valid" type="submit">Send Mail</button>
+    </div>
+  </form>
+</div>
+

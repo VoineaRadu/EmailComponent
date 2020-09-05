@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="header">
+    <p>Recent</p>
+    <fa-icon [icon]="faPlusCircle" (click)="createNewMail()"></fa-icon>
+  </div>
+  <div class="list-container" *ngFor="let email of emailConversations">
+    <app-email-item class="item" [email] = email></app-email-item>
+  </div>
+</div>
+
+
+
+

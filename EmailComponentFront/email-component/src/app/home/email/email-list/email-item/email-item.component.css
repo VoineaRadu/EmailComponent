@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  height: 100px;
+}
+
+.avatar {
+  flex: 20%;
+}
+
+.email-details {
+  flex: 80%;
+}
+
+.email-receiver{
+  flex: 80%;
+  color: grey;
+  font-size: 15px;
+  margin: 15px 0 0 0;
+}
+
+.date{
+  flex: 20%;
+  margin: 15px 0 0 0;
+  font-size: 15px;
+}
+
+.row{
+  display: flex;
+}
+
+.subject{
+  width: 100%;
+  font-weight: bold;
+  font-size: 17px;
+  margin: 5px 0 5px 0;
+}
+
+.message{
+  color: grey;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin: 0 0 15px 0;
+}
+
+.card{
+  background-color: #fbfcfc;
+  cursor: pointer
+}
+
+.card:hover{
+  background-color: white;
+}
+
+.readed {
+  opacity: 0.5;
+}
+
+.unread {
+
+}

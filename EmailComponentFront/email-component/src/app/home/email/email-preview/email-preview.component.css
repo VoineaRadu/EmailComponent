@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  margin-right: 50px;
+}
+
+.avatar {
+  flex: 10%;
+}
+
+.email-details {
+  flex: 90%;
+}
+
+.header{
+  display: flex;
+}
+
+.email{
+  margin: 0 0 15px 0;
+  color: grey;
+}
+
+.sender{
+  margin: 15px 0 0 0;
+  font-weight: bold;
+}
+
+.sender-info{
+  flex:50%;
+}
+
+.date{
+  flex:50%;
+}
+
+.subject-container{
+  display: flex;
+}
+
+.subject{
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 30px;
+  flex: 90%;
+}
+
+.message{
+  margin-right: 100px;
+  height: 60vh;
+  max-height: 60vh;
+}
+
+.icons-container{
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: space-between;
+  flex: 10%;
+}
+
+fa-icon{
+  cursor: pointer
+}
+
+input{
+  height: 50px;
+  width: 100%;
+}
+
+.response-message{
+  bottom: 100px;
+  width: 100%;
+  margin-right: 150px;
+}
+
+.buttons-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}

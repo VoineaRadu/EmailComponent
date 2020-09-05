@@ -1,0 +1,57 @@
+<div *ngIf="selectedEmail" class="container">
+  <div class="avatar">
+    avatar
+  </div>
+  <div class="email-details">
+    <div class="header">
+      <div class="sender-info">
+        <p class="sender">
+          {{selectedEmail.FirstName}} {{selectedEmail.LastName}}
+        </p>
+        <p class="email">
+          {{selectedEmail.Email}}
+        </p>
+      </div>
+      <p class="date">
+        {{ selectedEmail.Date * 1000 | date:'MMM d, y - HH:mm' }}
+      </p>
+    </div>
+    <div class="subject-container">
+      <p class="subject">
+        {{selectedEmail.Subject}}
+      </p>
+      <div class="icons-container">
+        <fa-icon [icon]="faArrowLeft"></fa-icon>
+        <fa-icon [icon]="faArrowRight"></fa-icon>
+        <fa-icon [icon]="faTrash" (click)="deleteMail()"></fa-icon>
+      </div>
+    </div>
+    <div class="message">
+      {{selectedEmail.Message}}
+    </div>
+
+    <div class="response-message">
+
+      <form  #emailForm="ngForm"  class="form-inline my-2 my-lg-0" (ngSubmit)="replayMail(emailForm)">
+        <input placeholder="Start writing your response here" type="text" name="emailMessage" required
+               [(ngModel)]="emailMessage">
+
+        <div class="buttons-container">
+          <div class="forward">
+            Forward
+          </div>
+          <div class="mark-as-spam">
+            Mark as spam
+          </div>
+          <div class="snooze-notifications">
+            Snooze notifications
+          </div>
+          <div class="attatch-files">
+            Attatch files
+          </div>
+          <button [disabled]="!emailForm.valid" type="submit">Send Email</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

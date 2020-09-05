@@ -1,0 +1,23 @@
+<mat-card [class]="email.IsReaded==true ? 'readed': 'unread'" class="card" (click)="onSelected()">
+  <div class="container">
+    <div class="avatar">
+      avatar
+    </div>
+    <div class="email-details">
+      <div class="row">
+        <p class="email-receiver">
+          {{email.FirstName + " " + email.LastName}}
+        </p>
+        <p class="date">
+          {{email.Date * 1000 | date:'dd.MM.y'}}
+        </p>
+      </div>
+      <div class="subject">
+        {{email.Subject}}
+      </div>
+      <div class="message">
+        {{email.Message}}
+      </div>
+    </div>
+  </div>
+</mat-card>

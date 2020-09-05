@@ -1,0 +1,16 @@
+.header{
+  display: flex;
+}
+
+p{
+  flex: 90;
+}
+
+fa-icon{
+  margin: auto;
+  flex: 10;
+}
+
+.container{
+  width: 400px;
+}
