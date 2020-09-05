@@ -88,7 +88,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".gitignore" />
     <Content Include="Global.asax" />
     <Content Include="Sql\Procedures\CreateDatabase.sql" />
     <Content Include="Sql\Procedures\GetIdOfReceiver.sql" />

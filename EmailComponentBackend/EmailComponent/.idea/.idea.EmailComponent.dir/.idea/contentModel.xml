@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Radu\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Radu\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_.19.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Radu\AppData\Roaming\JetBrains\Rider2020.2\consoles\db" t="IncludeRecursive" />
+    <e p="E:\EmailComponent\EmailComponentBackend\EmailComponent" t="IncludeRecursive">
+      <e p="App_Data" t="Include">
+        <e p="DataContext.cs" t="Include" />
+        <e p="EmailDao.cs" t="Include" />
+        <e p="UserDao.cs" t="Include" />
+      </e>
+      <e p="App_Start" t="Include">
+        <e p="WebApiConfig.cs" t="Include" />
+      </e>
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Controllers" t="Include">
+        <e p="EmailController.cs" t="Include" />
+      </e>
+      <e p="Dtos" t="Include">
+        <e p="EmailReceived.cs" t="Include" />
+        <e p="EmailToReplay.cs" t="Include" />
+        <e p="EmailToSend.cs" t="Include" />
+      </e>
+      <e p="EmailComponent.csproj" t="IncludeRecursive" />
+      <e p="Global.asax" t="Include" />
+      <e p="Global.asax.cs" t="Include" />
+      <e p="Models" t="Include">
+        <e p="Email.cs" t="Include" />
+        <e p="User.cs" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="packages.config" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+      <e p="Repository" t="Include">
+        <e p="EmailRepository.cs" t="Include" />
+      </e>
+      <e p="Sql" t="Include">
+        <e p="Procedures" t="Include">
+          <e p="CreateDatabase.sql" t="Include" />
+          <e p="GetIdOfReceiver.sql" t="Include" />
+          <e p="InsertEmail.sql" t="Include" />
+          <e p="InsertUser.sql" t="Include" />
+          <e p="ReadEmail.sql" t="Include" />
+          <e p="RetrieveEmailsForUser.sql" t="Include" />
+          <e p="UnassignEmail.sql" t="Include" />
+        </e>
+        <e p="Querys" t="Include">
+          <e p="CreateEmails.sql" t="Include" />
+          <e p="CreateTableEmails.sql" t="Include" />
+          <e p="CreateTableUsers.sql" t="Include" />
+          <e p="CreateUsers.sql" t="Include" />
+        </e>
+      </e>
+      <e p="Utils" t="Include">
+        <e p="DbUpgrade.cs" t="Include" />
+        <e p="Helper.cs" t="Include" />
+        <e p="ProcedureBuilder.cs" t="Include" />
+      </e>
+      <e p="Web.config" t="Include" />
+      <e p="Web.Debug.config" t="Include" />
+      <e p="Web.Release.config" t="Include" />
+    </e>
+  </component>
+</project>
